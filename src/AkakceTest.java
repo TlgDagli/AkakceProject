@@ -66,6 +66,7 @@ public class AkakceTest extends BaseDriver {
         kampanya.click();
         WebElement olustur = driver.findElement(By.xpath("//input[@id='rfb']"));
         olustur.click();}
+    @Test
     public void us_102() {
 
 
@@ -74,6 +75,7 @@ public class AkakceTest extends BaseDriver {
         System.out.println("kullanici = " + kullanici.getText());
         Assert.assertTrue("Kullanıcı Doğrulanamadı", kullanici.getText().contains("Sdet"));
     }
+    @Test
     public void us103(){
         WebElement kullanici = driver.findElement(By.cssSelector("[href='/akakcem/']"));
 
@@ -81,7 +83,9 @@ public class AkakceTest extends BaseDriver {
         Action aksiyon = aksiyonDriver.moveToElement(kullanici).build();
         aksiyon.perform();
         WebElement cik = driver.findElement(By.xpath("//a[@href='#Çık']"));
-        cik.click();}
+        cik.click();
+    }
+    @Test
     public void us_104() {
 
         wait.until(ExpectedConditions.urlToBe("https://www.akakce.com/"));
@@ -100,6 +104,7 @@ public class AkakceTest extends BaseDriver {
         giris.click();
         wait.until(ExpectedConditions.urlToBe("https://www.akakce.com/"));
     }
+    @Test
     public void us_105(){
 
         WebElement klnm = driver.findElement(By.xpath("//a[@id='H_a_v8']"));
