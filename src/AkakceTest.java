@@ -72,8 +72,8 @@ public class AkakceTest extends BaseDriver {
         Assert.assertTrue("Kullanıcı Doğrulanamadı",kullanici.getText().contains("Sdet"));
 
         Actions aksiyonDriver=new Actions(driver);
-        Action aksiyon=aksiyonDriver.moveToElement(kullanici).build();// element in üzerine gel
-        aksiyon.perform();// etki oluştur(mouse üzerinde).
+        Action aksiyon=aksiyonDriver.moveToElement(kullanici).build();
+        aksiyon.perform();
         WebElement cik=driver.findElement(By.xpath("//a[@href='#Çık']"));
         cik.click();
 
@@ -89,9 +89,13 @@ public class AkakceTest extends BaseDriver {
         WebElement passgiris=driver.findElement(By.xpath("//input[@id='lifp']"));
         passgiris.sendKeys("Sdet123**");
 
-        WebElement giris=driver.findElement(By.xpath("//input[@id='lifb']"));
+        WebElement giris=driver.findElement(By.xpath("//input[@id='lfb']"));
         giris.click();
-        wait.until(ExpectedConditions.urlToBe("https://www.akakce.com/akakcem/"));
+        wait.until(ExpectedConditions.urlToBe("https://www.akakce.com/"));
+        Action aksiyon2=aksiyonDriver.moveToElement(kullanici).build();
+        aksiyon2.perform();// etki oluştur(mouse üzerinde).
+        WebElement hesabım=driver.findElement(By.xpath("//a[@href='/akakcem']"));
+        hesabım.click();
 
         WebElement siparis=driver.findElement(By.xpath("//a[text()='Siparişlerim']"));
         siparis.click();
