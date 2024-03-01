@@ -12,113 +12,103 @@ import org.openqa.selenium.support.ui.Select;
 
 public class AkakceTest extends BaseDriver {
     @Test
-    public void akakce(){
+    public void akakce() {
         driver.get("https://www.akakce.com/");
 
         Myfunc.Bekle(2);
-        WebElement hspac=driver.findElement(By.xpath("//a[text()='Hesap Aç']"));
+        WebElement hspac = driver.findElement(By.xpath("//a[text()='Hesap Aç']"));
         hspac.click();
-        WebElement ad=driver.findElement(By.xpath("//input[@id='rnufn']"));
+        WebElement ad = driver.findElement(By.xpath("//input[@id='rnufn']"));
         ad.sendKeys("Sdet");
 
-        WebElement soyad=driver.findElement(By.xpath("//input[@id='rnufs']"));
+        WebElement soyad = driver.findElement(By.xpath("//input[@id='rnufs']"));
         soyad.sendKeys("Tears");
 
-        WebElement mail=driver.findElement(By.xpath("//input[@id='rnufe1']"));
+        WebElement mail = driver.findElement(By.xpath("//input[@id='rnufe1']"));
         mail.sendKeys("tolgahelmet@gmail.com");
 
-        WebElement mail2=driver.findElement(By.xpath("//input[@id='rnufe2']"));
+        WebElement mail2 = driver.findElement(By.xpath("//input[@id='rnufe2']"));
         mail2.sendKeys("tolgahelmet@gmail.com");
 
-        WebElement pass1=driver.findElement(By.xpath("//input[@id='rnufp1']"));
+        WebElement pass1 = driver.findElement(By.xpath("//input[@id='rnufp1']"));
         pass1.sendKeys("Sdet123**");
 
-        WebElement pass2=driver.findElement(By.xpath("//input[@id='rnufp2']"));
+        WebElement pass2 = driver.findElement(By.xpath("//input[@id='rnufp2']"));
         pass2.sendKeys("Sdet123**");
 
-        WebElement gender=driver.findElement(By.xpath("//input[@id='rngm']"));
+        WebElement gender = driver.findElement(By.xpath("//input[@id='rngm']"));
         gender.click();
 
-        WebElement il= driver.findElement(By.xpath("//select[@id='locpr']"));
-        Select ilSelect=new Select(il);
+        WebElement il = driver.findElement(By.xpath("//select[@id='locpr']"));
+        Select ilSelect = new Select(il);
         ilSelect.selectByIndex(1);
 
-        WebElement ilce= driver.findElement(By.xpath("//select[@id='locds']"));
-        Select ilceSelect=new Select(ilce);
+        WebElement ilce = driver.findElement(By.xpath("//select[@id='locds']"));
+        Select ilceSelect = new Select(ilce);
         ilceSelect.selectByIndex(4);
 
-        WebElement gun= driver.findElement(By.xpath("//select[@id='bd']"));
-        Select gunSelect=new Select(gun);
+        WebElement gun = driver.findElement(By.xpath("//select[@id='bd']"));
+        Select gunSelect = new Select(gun);
         gunSelect.selectByIndex(25);
 
-        WebElement ay= driver.findElement(By.xpath("//select[@id='bm']"));
-        Select aySelect=new Select(ay);
+        WebElement ay = driver.findElement(By.xpath("//select[@id='bm']"));
+        Select aySelect = new Select(ay);
         aySelect.selectByIndex(12);
 
-        WebElement yil= driver.findElement(By.xpath("//select[@id='by']"));
-        Select yilSelect=new Select(yil);
+        WebElement yil = driver.findElement(By.xpath("//select[@id='by']"));
+        Select yilSelect = new Select(yil);
         yilSelect.selectByVisibleText("1982");
 
-        WebElement ksggp=driver.findElement(By.xpath("//input[@id='rnufpca']"));
+        WebElement ksggp = driver.findElement(By.xpath("//input[@id='rnufpca']"));
         ksggp.click();
 
-        WebElement kampanya=driver.findElement(By.xpath("//input[@id='rnufnee']"));
+        WebElement kampanya = driver.findElement(By.xpath("//input[@id='rnufnee']"));
         kampanya.click();
-        WebElement olustur=driver.findElement(By.xpath("//input[@id='rfb']"));
+        WebElement olustur = driver.findElement(By.xpath("//input[@id='rfb']"));
         olustur.click();
-        wait.until(ExpectedConditions.textToBe(By.cssSelector("[href='/akakcem/']"),"Sdet"));
+        wait.until(ExpectedConditions.textToBe(By.cssSelector("[href='/akakcem/']"), "Sdet"));
 
 
-        WebElement kullanici=driver.findElement(By.cssSelector("[href='/akakcem/']"));
+        WebElement kullanici = driver.findElement(By.cssSelector("[href='/akakcem/']"));
         System.out.println("kullanici = " + kullanici.getText());
-        Assert.assertTrue("Kullanıcı Doğrulanamadı",kullanici.getText().contains("Sdet"));
+        Assert.assertTrue("Kullanıcı Doğrulanamadı", kullanici.getText().contains("Sdet"));
 
-        Actions aksiyonDriver=new Actions(driver);
-        Action aksiyon=aksiyonDriver.moveToElement(kullanici).build();
+        Actions aksiyonDriver = new Actions(driver);
+        Action aksiyon = aksiyonDriver.moveToElement(kullanici).build();
         aksiyon.perform();
-        WebElement cik=driver.findElement(By.xpath("//a[@href='#Çık']"));
+        WebElement cik = driver.findElement(By.xpath("//a[@href='#Çık']"));
         cik.click();
 
         wait.until(ExpectedConditions.urlToBe("https://www.akakce.com/"));
 
-        WebElement girisyap=driver.findElement(By.xpath("//a[@href='/akakcem/giris/']"));
+        WebElement girisyap = driver.findElement(By.xpath("//a[@href='/akakcem/giris/']"));
         girisyap.click();
 
 
-        WebElement mailgiris=driver.findElement(By.xpath("//input[@id='life']"));
+        WebElement mailgiris = driver.findElement(By.xpath("//input[@id='life']"));
         mailgiris.sendKeys("tolgahelmet@gmail.com");
 
-        WebElement passgiris=driver.findElement(By.xpath("//input[@id='lifp']"));
+        WebElement passgiris = driver.findElement(By.xpath("//input[@id='lifp']"));
         passgiris.sendKeys("Sdet123**");
 
-        WebElement giris=driver.findElement(By.xpath("//input[@id='lfb']"));
+        WebElement giris = driver.findElement(By.xpath("//input[@id='lfb']"));
         giris.click();
         wait.until(ExpectedConditions.urlToBe("https://www.akakce.com/"));
+        WebElement klnm = driver.findElement(By.xpath("//a[@id='H_a_v8']"));
+        Actions aksiyonDriver2 = new Actions(driver);
+        Action aksiyon2 = aksiyonDriver2.moveToElement(klnm).build();
+        aksiyon2.perform();
+        Myfunc.Bekle(1);
 
-        aksiyonDriver.moveToElement(kullanici).build().perform();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@href='/akakcem']")));
-
-        WebElement hesabim=driver.findElement(By.xpath("//a[@href='/akakcem']"));
+        WebElement hesabim = driver.findElement(By.xpath("//a[text()='Hesabım']"));
         hesabim.click();
 
-        WebElement siparis=driver.findElement(By.xpath("//a[text()='Siparişlerim']"));
+        WebElement siparis = driver.findElement(By.xpath("//a[text()='Siparişlerim']"));
         siparis.click();
         wait.until(ExpectedConditions.urlToBe("https://www.akakce.com/akakcem/siparislerim/"));
 
 
-
-
-
-
-
-
-
-
-
-
-
         BekleKapat();
-
 
 
     }
