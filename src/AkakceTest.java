@@ -14,6 +14,8 @@ public class AkakceTest extends BaseDriver {
     @Test
     public void akakce(){
         driver.get("https://www.akakce.com/");
+
+        Myfunc.Bekle(2);
         WebElement hspac=driver.findElement(By.xpath("//a[text()='Hesap Aç']"));
         hspac.click();
         WebElement ad=driver.findElement(By.xpath("//input[@id='rnufn']"));
@@ -94,9 +96,10 @@ public class AkakceTest extends BaseDriver {
         wait.until(ExpectedConditions.urlToBe("https://www.akakce.com/"));
 
         aksiyonDriver.moveToElement(kullanici).build().perform();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@href='/akakcem']")));
 
-        WebElement hesabım=driver.findElement(By.xpath("//a[@href='/akakcem']"));
-        hesabım.click();
+        WebElement hesabim=driver.findElement(By.xpath("//a[@href='/akakcem']"));
+        hesabim.click();
 
         WebElement siparis=driver.findElement(By.xpath("//a[text()='Siparişlerim']"));
         siparis.click();
