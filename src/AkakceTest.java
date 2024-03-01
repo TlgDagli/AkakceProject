@@ -77,6 +77,7 @@ public class AkakceTest extends BaseDriver {
     }
     @Test
     public void us103(){
+        us_104();
         WebElement kullanici = driver.findElement(By.cssSelector("[href='/akakcem/']"));
 
         Actions aksiyonDriver = new Actions(driver);
@@ -87,6 +88,7 @@ public class AkakceTest extends BaseDriver {
     }
     @Test
     public void us_104() {
+        driver.get("https://www.akakce.com/");
 
         wait.until(ExpectedConditions.urlToBe("https://www.akakce.com/"));
 
