@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class AkakceTest extends BaseDriver {
     @Test
-    public void akakce() {
+    public void us_101() {
         driver.get("https://www.akakce.com/");
 
         Myfunc.Bekle(2);
@@ -65,19 +65,24 @@ public class AkakceTest extends BaseDriver {
         WebElement kampanya = driver.findElement(By.xpath("//input[@id='rnufnee']"));
         kampanya.click();
         WebElement olustur = driver.findElement(By.xpath("//input[@id='rfb']"));
-        olustur.click();
-        wait.until(ExpectedConditions.textToBe(By.cssSelector("[href='/akakcem/']"), "Sdet"));
+        olustur.click();}
+    public void us_102() {
+
 
 
         WebElement kullanici = driver.findElement(By.cssSelector("[href='/akakcem/']"));
         System.out.println("kullanici = " + kullanici.getText());
         Assert.assertTrue("Kullanıcı Doğrulanamadı", kullanici.getText().contains("Sdet"));
+    }
+    public void us103(){
+        WebElement kullanici = driver.findElement(By.cssSelector("[href='/akakcem/']"));
 
         Actions aksiyonDriver = new Actions(driver);
         Action aksiyon = aksiyonDriver.moveToElement(kullanici).build();
         aksiyon.perform();
         WebElement cik = driver.findElement(By.xpath("//a[@href='#Çık']"));
-        cik.click();
+        cik.click();}
+    public void us_104() {
 
         wait.until(ExpectedConditions.urlToBe("https://www.akakce.com/"));
 
@@ -94,11 +99,13 @@ public class AkakceTest extends BaseDriver {
         WebElement giris = driver.findElement(By.xpath("//input[@id='lfb']"));
         giris.click();
         wait.until(ExpectedConditions.urlToBe("https://www.akakce.com/"));
+    }
+    public void us_105(){
+
         WebElement klnm = driver.findElement(By.xpath("//a[@id='H_a_v8']"));
         Actions aksiyonDriver2 = new Actions(driver);
         Action aksiyon2 = aksiyonDriver2.moveToElement(klnm).build();
         aksiyon2.perform();
-        Myfunc.Bekle(1);
 
         WebElement hesabim = driver.findElement(By.xpath("//a[text()='Hesabım']"));
         hesabim.click();
