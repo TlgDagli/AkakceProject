@@ -1,8 +1,13 @@
 import Utility.BaseDriver;
 
+import Utility.Myfunc;
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
 public class AkakceTest extends BaseDriver {
@@ -18,16 +23,16 @@ public class AkakceTest extends BaseDriver {
         soyad.sendKeys("Tears");
 
         WebElement mail=driver.findElement(By.xpath("//input[@id='rnufe1']"));
-        mail.sendKeys("deneme@gmail.com");
+        mail.sendKeys("tolgahelmet@gmail.com");
 
         WebElement mail2=driver.findElement(By.xpath("//input[@id='rnufe2']"));
-        mail2.sendKeys("deneme@gmail.com");
+        mail2.sendKeys("tolgahelmet@gmail.com");
 
         WebElement pass1=driver.findElement(By.xpath("//input[@id='rnufp1']"));
-        pass1.sendKeys("Sdet123");
+        pass1.sendKeys("Sdet123**");
 
         WebElement pass2=driver.findElement(By.xpath("//input[@id='rnufp2']"));
-        pass2.sendKeys("Sdet123");
+        pass2.sendKeys("Sdet123**");
 
         WebElement gender=driver.findElement(By.xpath("//input[@id='rngm']"));
         gender.click();
@@ -59,6 +64,40 @@ public class AkakceTest extends BaseDriver {
         kampanya.click();
         WebElement olustur=driver.findElement(By.xpath("//input[@id='rfb']"));
         olustur.click();
+        wait.until(ExpectedConditions.textToBe(By.cssSelector("[href='/akakcem/']"),"Sdet"));
+
+
+        WebElement kullanici=driver.findElement(By.cssSelector("[href='/akakcem/']"));
+        System.out.println("kullanici = " + kullanici.getText());
+        Assert.assertTrue("Kullanıcı Doğrulanamadı",kullanici.getText().contains("Sdet"));
+
+        Actions aksiyonDriver=new Actions(driver);
+        Action aksiyon=aksiyonDriver.moveToElement(kullanici).build();// element in üzerine gel
+        aksiyon.perform();// etki oluştur(mouse üzerinde).
+        WebElement cik=driver.findElement(By.xpath("//a[@href='#Çık']"));
+        cik.click();
+        WebElement mailgiris=driver.findElement(By.xpath("//input[@id='life']"));
+        mailgiris.sendKeys("tolgahelmet@gmail.com");
+
+        WebElement passgiris=driver.findElement(By.xpath("//input[@id='lifp']"));
+        passgiris.sendKeys("Sdet123**");
+
+        WebElement giris=driver.findElement(By.xpath("//input[@id='lifb']"));
+        giris.click();
+        wait.until(ExpectedConditions.urlToBe("https://www.akakce.com/akakcem/"));
+
+        WebElement siparis=driver.findElement(By.xpath("//a[text()='Siparişlerim']"));
+        siparis.click();
+        wait.until(ExpectedConditions.urlToBe("https://www.akakce.com/akakcem/siparislerim/"));
+
+
+
+
+
+
+
+
+
 
 
 
