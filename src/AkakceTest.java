@@ -77,7 +77,12 @@ public class AkakceTest extends BaseDriver {
         WebElement cik=driver.findElement(By.xpath("//a[@href='#Çık']"));
         cik.click();
 
-        wait.until(ExpectedConditions.urlToBe("https://www.akakce.com/akakcem/giris/"));
+        wait.until(ExpectedConditions.urlToBe("https://www.akakce.com/"));
+
+        WebElement girisyap=driver.findElement(By.xpath("//a[@href='/akakcem/giris/']"));
+        girisyap.click();
+
+
         WebElement mailgiris=driver.findElement(By.xpath("//input[@id='life']"));
         mailgiris.sendKeys("tolgahelmet@gmail.com");
 
