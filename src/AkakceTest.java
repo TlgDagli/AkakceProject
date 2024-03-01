@@ -120,7 +120,7 @@ public class AkakceTest extends BaseDriver {
         wait.until(ExpectedConditions.urlToBe("https://www.akakce.com/akakcem/siparislerim/"));
 
 
-        //BekleKapat();
+        BekleKapat();
 
 
     }
