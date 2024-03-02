@@ -66,6 +66,7 @@ public class AkakceTest extends BaseDriver {
         kampanya.click();
         WebElement olustur = driver.findElement(By.xpath("//input[@id='rfb']"));
         olustur.click();
+        BekleKapat();
     }
 
     @Test
@@ -84,6 +85,7 @@ public class AkakceTest extends BaseDriver {
         Aksiyon();
         WebElement cik = driver.findElement(By.xpath("//a[@href='#Çık']"));
         cik.click();
+        BekleKapat();
     }
 
     @Test
@@ -116,7 +118,7 @@ public class AkakceTest extends BaseDriver {
         WebElement msj = driver.findElement(By.xpath("//a[text()='Mesajlarım']"));
         msj.click();
         WebElement msjVarmi = driver.findElement(By.xpath("//p[text()='Listelenecek mesaj bulunamadı.']"));
-        Assert.assertTrue("Siparişiniz Bulunmaktadır",
+        Assert.assertTrue("Mesajınız Bulunmaktadır",
                 msjVarmi.getText().equals("Listelenecek mesaj bulunamadı."));
         BekleKapat();
     }

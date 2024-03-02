@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b662fe91-83bd-4546-b75c-591fb2acc307" name="Changes" comment="son hali9">
+    <list default="true" id="b662fe91-83bd-4546-b75c-591fb2acc307" name="Changes" comment="Finish">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/seleniumhq_selenium_java.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/slf4j_nop.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AkakceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AkakceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utility/BaseDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utility/BaseDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utility/Deneme.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utility/Ömer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ömer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,15 +66,18 @@
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.AkakceTest.akakce.executor": "Run",
     "JUnit.AkakceTest.us103.executor": "Run",
-    "JUnit.AkakceTest.us_101.executor": "Coverage",
+    "JUnit.AkakceTest.us_101.executor": "Run",
     "JUnit.AkakceTest.us_102.executor": "Run",
+    "JUnit.AkakceTest.us_104.executor": "Run",
     "JUnit.AkakceTest.us_105.executor": "Run",
     "JUnit.AkakceTest.us_106.executor": "Run",
+    "JUnit.AkakceTest.us_107.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
@@ -98,11 +101,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AkakceTest.us_102" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AkakceTest.us_104" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AkakceProject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AkakceTest" />
-      <option name="METHOD_NAME" value="us_102" />
+      <option name="METHOD_NAME" value="us_104" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,8 +146,8 @@
         <item itemvalue="JUnit.AkakceTest.us_107" />
         <item itemvalue="JUnit.AkakceTest.us_106" />
         <item itemvalue="JUnit.AkakceTest.us_105" />
+        <item itemvalue="JUnit.AkakceTest.us_104" />
         <item itemvalue="JUnit.AkakceTest.us103" />
-        <item itemvalue="JUnit.AkakceTest.us_102" />
       </list>
     </recent_temporary>
   </component>
@@ -284,7 +287,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709331897719</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Finish">
+      <option name="closed" value="true" />
+      <created>1709351876384</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1709351876384</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -310,7 +321,8 @@
     <MESSAGE value="son hali8" />
     <MESSAGE value="son hali7" />
     <MESSAGE value="son hali9" />
-    <option name="LAST_COMMIT_MESSAGE" value="son hali9" />
+    <MESSAGE value="Finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AkakceProject$AkakceTest_us_101.ic" NAME="AkakceTest.us_101 Coverage Results" MODIFIED="1709332111537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
