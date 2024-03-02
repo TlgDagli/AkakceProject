@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b662fe91-83bd-4546-b75c-591fb2acc307" name="Changes" comment="merhaba yeryüzü">
-      <change afterPath="$PROJECT_DIR$/src/fatih.java" afterDir="false" />
+    <list default="true" id="b662fe91-83bd-4546-b75c-591fb2acc307" name="Changes" comment="son hali9">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AkakceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AkakceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utility/BaseDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utility/BaseDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utility/Deneme.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utility/Ömer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ömer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,21 +26,28 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="fatih" />
+        <entry key="$PROJECT_DIR$" value="Tolga" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "fatihpolat33"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;fatihpolat33&quot;
   }
-}]]></component>
+}</component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="Akakce" />
+      </list>
+    </option>
+  </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="4bf95c00-4854-47e5-9452-8c7e6532a1d4" />
+        <option name="accountId" value="396117c1-845a-4dab-bec2-d0e8f8f513a1" />
         <option name="url" value="https://github.com/TlgDagli/AkakceProject.git" />
       </UrlAndAccount>
     </option>
@@ -55,13 +65,18 @@
   "keyToString": {
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.AkakceTest.akakce.executor": "Run",
+    "JUnit.AkakceTest.us103.executor": "Run",
+    "JUnit.AkakceTest.us_101.executor": "Coverage",
+    "JUnit.AkakceTest.us_102.executor": "Run",
+    "JUnit.AkakceTest.us_105.executor": "Run",
+    "JUnit.AkakceTest.us_106.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel"
@@ -72,12 +87,52 @@
       <recent name="Utility" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="AkakceTest.akakce" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AkakceTest.us_107">
+    <configuration name="AkakceTest.us103" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AkakceProject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AkakceTest" />
-      <option name="METHOD_NAME" value="akakce" />
+      <option name="METHOD_NAME" value="us103" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AkakceTest.us_102" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AkakceProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AkakceTest" />
+      <option name="METHOD_NAME" value="us_102" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AkakceTest.us_105" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AkakceProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AkakceTest" />
+      <option name="METHOD_NAME" value="us_105" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AkakceTest.us_106" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AkakceProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AkakceTest" />
+      <option name="METHOD_NAME" value="us_106" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AkakceTest.us_107" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AkakceProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AkakceTest" />
+      <option name="METHOD_NAME" value="us_107" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -85,10 +140,20 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AkakceTest.akakce" />
-        <item itemvalue="JUnit.AkakceTest.akakce" />
+        <item itemvalue="JUnit.AkakceTest.us_107" />
+        <item itemvalue="JUnit.AkakceTest.us_106" />
+        <item itemvalue="JUnit.AkakceTest.us_105" />
+        <item itemvalue="JUnit.AkakceTest.us103" />
+        <item itemvalue="JUnit.AkakceTest.us_102" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.22-corretto-11.0.22-4caba194b151-868cef46" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -107,7 +172,119 @@
       <option name="project" value="LOCAL" />
       <updated>1709316123963</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="hesap acıldı">
+      <option name="closed" value="true" />
+      <created>1709320531879</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709320531879</updated>
+    </task>
+    <task id="LOCAL-00003" summary="son hali">
+      <option name="closed" value="true" />
+      <created>1709324905604</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709324905605</updated>
+    </task>
+    <task id="LOCAL-00004" summary="son hali">
+      <option name="closed" value="true" />
+      <created>1709325069102</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709325069102</updated>
+    </task>
+    <task id="LOCAL-00005" summary="son hali">
+      <option name="closed" value="true" />
+      <created>1709325619544</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709325619544</updated>
+    </task>
+    <task id="LOCAL-00006" summary="son hali2">
+      <option name="closed" value="true" />
+      <created>1709326152166</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709326152166</updated>
+    </task>
+    <task id="LOCAL-00007" summary="son hali3">
+      <option name="closed" value="true" />
+      <created>1709327185736</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1709327185736</updated>
+    </task>
+    <task id="LOCAL-00008" summary="son hali4">
+      <option name="closed" value="true" />
+      <created>1709327554426</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709327554426</updated>
+    </task>
+    <task id="LOCAL-00009" summary="son hali5">
+      <option name="closed" value="true" />
+      <created>1709328085355</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709328085355</updated>
+    </task>
+    <task id="LOCAL-00010" summary="son hali6">
+      <option name="closed" value="true" />
+      <created>1709328972444</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1709328972444</updated>
+    </task>
+    <task id="LOCAL-00011" summary="son hali7">
+      <option name="closed" value="true" />
+      <created>1709330389128</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1709330389128</updated>
+    </task>
+    <task id="LOCAL-00012" summary="son hali8">
+      <option name="closed" value="true" />
+      <created>1709330524134</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1709330524134</updated>
+    </task>
+    <task id="LOCAL-00013" summary="son hali8">
+      <option name="closed" value="true" />
+      <created>1709330665511</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1709330665511</updated>
+    </task>
+    <task id="LOCAL-00014" summary="son hali7">
+      <option name="closed" value="true" />
+      <created>1709330710520</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1709330710520</updated>
+    </task>
+    <task id="LOCAL-00015" summary="son hali9">
+      <option name="closed" value="true" />
+      <created>1709331897719</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1709331897719</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,6 +300,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="merhaba yeryüzü" />
-    <option name="LAST_COMMIT_MESSAGE" value="merhaba yeryüzü" />
+    <MESSAGE value="hesap acıldı" />
+    <MESSAGE value="son hali" />
+    <MESSAGE value="son hali2" />
+    <MESSAGE value="son hali3" />
+    <MESSAGE value="son hali4" />
+    <MESSAGE value="son hali5" />
+    <MESSAGE value="son hali6" />
+    <MESSAGE value="son hali8" />
+    <MESSAGE value="son hali7" />
+    <MESSAGE value="son hali9" />
+    <option name="LAST_COMMIT_MESSAGE" value="son hali9" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/AkakceProject$AkakceTest_us_101.ic" NAME="AkakceTest.us_101 Coverage Results" MODIFIED="1709332111537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

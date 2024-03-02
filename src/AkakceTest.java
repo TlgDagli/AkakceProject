@@ -65,65 +65,74 @@ public class AkakceTest extends BaseDriver {
         WebElement kampanya = driver.findElement(By.xpath("//input[@id='rnufnee']"));
         kampanya.click();
         WebElement olustur = driver.findElement(By.xpath("//input[@id='rfb']"));
-        olustur.click();}
+        olustur.click();
+    }
+
     @Test
     public void us_102() {
-
-
-
+        Basla();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[href='/akakcem/']")));
         WebElement kullanici = driver.findElement(By.cssSelector("[href='/akakcem/']"));
         System.out.println("kullanici = " + kullanici.getText());
         Assert.assertTrue("Kullanıcı Doğrulanamadı", kullanici.getText().contains("Sdet"));
+        BekleKapat();
     }
-    @Test
-    public void us103(){
-        us_104();
-        WebElement kullanici = driver.findElement(By.cssSelector("[href='/akakcem/']"));
 
-        Actions aksiyonDriver = new Actions(driver);
-        Action aksiyon = aksiyonDriver.moveToElement(kullanici).build();
-        aksiyon.perform();
+    @Test
+    public void us103() {
+        Basla();
+        Aksiyon();
         WebElement cik = driver.findElement(By.xpath("//a[@href='#Çık']"));
         cik.click();
     }
+
     @Test
     public void us_104() {
-        driver.get("https://www.akakce.com/");
-
-        wait.until(ExpectedConditions.urlToBe("https://www.akakce.com/"));
-
-        WebElement girisyap = driver.findElement(By.xpath("//a[@href='/akakcem/giris/']"));
-        girisyap.click();
-
-
-        WebElement mailgiris = driver.findElement(By.xpath("//input[@id='life']"));
-        mailgiris.sendKeys("tolgahelmet@gmail.com");
-
-        WebElement passgiris = driver.findElement(By.xpath("//input[@id='lifp']"));
-        passgiris.sendKeys("Sdet123**");
-
-        WebElement giris = driver.findElement(By.xpath("//input[@id='lfb']"));
-        giris.click();
-        wait.until(ExpectedConditions.urlToBe("https://www.akakce.com/"));
+        Basla();
+        BekleKapat();
     }
+
     @Test
-    public void us_105(){
-
-        WebElement klnm = driver.findElement(By.xpath("//a[@id='H_a_v8']"));
-        Actions aksiyonDriver2 = new Actions(driver);
-        Action aksiyon2 = aksiyonDriver2.moveToElement(klnm).build();
-        aksiyon2.perform();
-
+    public void us_105() {
+        Basla();
+        Aksiyon();
         WebElement hesabim = driver.findElement(By.xpath("//a[text()='Hesabım']"));
         hesabim.click();
-
         WebElement siparis = driver.findElement(By.xpath("//a[text()='Siparişlerim']"));
         siparis.click();
         wait.until(ExpectedConditions.urlToBe("https://www.akakce.com/akakcem/siparislerim/"));
-
-
+        WebElement siparisVarmı = driver.findElement(By.xpath("//div[@class='no-record']"));
+        Assert.assertTrue("Siparişiniz Bulunmaktadır",
+                siparisVarmı.getText().equals("Kayıtlı siparişiniz bulunmuyor."));
         BekleKapat();
+    }
 
+    @Test
+    public void us_106() {
+        Basla();
+        Aksiyon();
+        WebElement hesabim = driver.findElement(By.xpath("//a[text()='Hesabım']"));
+        hesabim.click();
+        WebElement msj = driver.findElement(By.xpath("//a[text()='Mesajlarım']"));
+        msj.click();
+        WebElement msjVarmi = driver.findElement(By.xpath("//p[text()='Listelenecek mesaj bulunamadı.']"));
+        Assert.assertTrue("Siparişiniz Bulunmaktadır",
+                msjVarmi.getText().equals("Listelenecek mesaj bulunamadı."));
+        BekleKapat();
+    }
+    @Test
+    public void us_107(){
+        Basla();
+        Aksiyon();
+        WebElement hesabim = driver.findElement(By.xpath("//a[text()='Hesabım']"));
+        hesabim.click();
+        WebElement hesapSil = driver.findElement(By.xpath("//a[text()='Hesabımı Sil']"));
+        hesapSil.click();
+        WebElement pass3 = driver.findElement(By.xpath("//input[@id='p']"));
+        pass3.sendKeys("Sdet123**");
+        WebElement hSilBtn = driver.findElement(By.xpath("//input[@id='u']"));
+        hSilBtn.click();
+        BekleKapat();
 
     }
 
