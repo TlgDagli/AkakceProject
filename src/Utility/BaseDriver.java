@@ -26,27 +26,23 @@ public class BaseDriver {
     public static void Aksiyon(){
 
         WebElement klnm = driver.findElement(By.xpath("//a[@id='H_a_v8']"));
-        Actions aksiyonDriver2 = new Actions(driver);
-        Action aksiyon2 = aksiyonDriver2.moveToElement(klnm).build();
-        aksiyon2.perform();
+        klnm.click();
+        //Actions aksiyonDriver2 = new Actions(driver);
+        //Action aksiyon2 = aksiyonDriver2.moveToElement(klnm).build();
+        //aksiyon2.perform();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='Hesabım']")));
     }
 
     public static void Basla(){
         driver.get("https://www.akakce.com/");
-
         wait.until(ExpectedConditions.urlToBe("https://www.akakce.com/"));
 
         WebElement girisyap = driver.findElement(By.xpath("//a[@href='/akakcem/giris/']"));
         girisyap.click();
-
-
         WebElement mailgiris = driver.findElement(By.xpath("//input[@id='life']"));
         mailgiris.sendKeys("tolgahelmet@gmail.com");
-
         WebElement passgiris = driver.findElement(By.xpath("//input[@id='lifp']"));
         passgiris.sendKeys("Sdet123**");
-
         WebElement giris = driver.findElement(By.xpath("//input[@id='lfb']"));
         giris.click();
     }
