@@ -29,7 +29,7 @@ public class BaseDriver {
         Actions aksiyonDriver2 = new Actions(driver);
         Action aksiyon2 = aksiyonDriver2.moveToElement(klnm).build();
         aksiyon2.perform();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@id='H_a_v8']")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='Hesabım']")));
     }
 
     public static void Basla(){

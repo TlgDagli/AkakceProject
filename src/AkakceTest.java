@@ -64,13 +64,13 @@ public class AkakceTest extends BaseDriver {
         kampanya.click();
         WebElement olustur = driver.findElement(By.xpath("//input[@id='rfb']"));
         olustur.click();
-       // BekleKapat();
+       // BekleKapat();tek bolum test etmek için  yorumdan cıkar
 
     }
 
     @Test
     public void us_102() {
-       // Basla();
+       // Basla();tek bolum test etmek için  yorumdan cıkar
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[href='/akakcem/']")));
         WebElement kullanici = driver.findElement(By.cssSelector("[href='/akakcem/']"));
         System.out.println("kullanici = " + kullanici.getText());
@@ -81,16 +81,16 @@ public class AkakceTest extends BaseDriver {
 
     @Test
     public void us_103() {
-       // Basla();
+       // Basla();tek bolum test etmek için  yorumdan cıkar
         Aksiyon();
         WebElement cik = driver.findElement(By.xpath("//a[@href='#Çık']"));
         cik.click();
-        //BekleKapat();
+        //BekleKapat();tek bolum test etmek için  yorumdan cıkar
     }
 
     @Test
     public void us_104() {
-       // Basla();
+       // Basla();tek bolum test etmek için  yorumdan cıkar
 
         WebElement girisyap = driver.findElement(By.xpath("//a[@href='/akakcem/giris/']"));
         girisyap.click();
@@ -104,12 +104,12 @@ public class AkakceTest extends BaseDriver {
 
         WebElement giris = driver.findElement(By.xpath("//input[@id='lfb']"));
         giris.click();
-        //BekleKapat();
+        //BekleKapat();tek bolum test etmek için  yorumdan cıkar
     }
 
     @Test
     public void us_105() {
-       // Basla();
+       // Basla();tek bolum test etmek için  yorumdan cıkar
         Aksiyon();
         WebElement hesabim = driver.findElement(By.xpath("//a[text()='Hesabım']"));
         hesabim.click();
@@ -119,12 +119,12 @@ public class AkakceTest extends BaseDriver {
         WebElement siparisVarmı = driver.findElement(By.xpath("//div[@class='no-record']"));
         Assert.assertTrue("Siparişiniz Bulunmaktadır",
                 siparisVarmı.getText().equals("Kayıtlı siparişiniz bulunmuyor."));
-        //BekleKapat();
+        //BekleKapat();tek bolum test etmek için  yorumdan cıkar
     }
 
     @Test
     public void us_106() {
-        //Basla();
+        //Basla();// tek bolum test etmek için  yorumdan cıkar
         Aksiyon();
         WebElement hesabim = driver.findElement(By.xpath("//a[text()='Hesabım']"));
         hesabim.click();
@@ -133,12 +133,12 @@ public class AkakceTest extends BaseDriver {
         WebElement msjVarmi = driver.findElement(By.xpath("//p[text()='Listelenecek mesaj bulunamadı.']"));
         Assert.assertTrue("Mesajınız Bulunmaktadır",
                 msjVarmi.getText().equals("Listelenecek mesaj bulunamadı."));
-        //BekleKapat();
+        //BekleKapat();// tek bolum test etmek için  yorumdan cıkar
        
     }
     @Test
     public void us_107(){
-       //Basla();
+       //Basla();// tek bolum test etmek için Basla yı yorumdan cıkar
         Aksiyon();
         WebElement hesabim = driver.findElement(By.xpath("//a[text()='Hesabım']"));
         hesabim.click();
