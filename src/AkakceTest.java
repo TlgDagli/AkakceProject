@@ -5,8 +5,6 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
@@ -66,37 +64,52 @@ public class AkakceTest extends BaseDriver {
         kampanya.click();
         WebElement olustur = driver.findElement(By.xpath("//input[@id='rfb']"));
         olustur.click();
-        BekleKapat();
+       // BekleKapat();
+
     }
 
     @Test
     public void us_102() {
-        Basla();
+       // Basla();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[href='/akakcem/']")));
         WebElement kullanici = driver.findElement(By.cssSelector("[href='/akakcem/']"));
         System.out.println("kullanici = " + kullanici.getText());
         Assert.assertTrue("Kullanıcı Doğrulanamadı", kullanici.getText().contains("Sdet"));
-        BekleKapat();
+        //BekleKapat();
+
     }
 
     @Test
-    public void us103() {
-        Basla();
+    public void us_103() {
+       // Basla();
         Aksiyon();
         WebElement cik = driver.findElement(By.xpath("//a[@href='#Çık']"));
         cik.click();
-        BekleKapat();
+        //BekleKapat();
     }
 
     @Test
     public void us_104() {
-        Basla();
-        BekleKapat();
+       // Basla();
+
+        WebElement girisyap = driver.findElement(By.xpath("//a[@href='/akakcem/giris/']"));
+        girisyap.click();
+
+
+        WebElement mailgiris = driver.findElement(By.xpath("//input[@id='life']"));
+        mailgiris.sendKeys("tolgahelmet@gmail.com");
+
+        WebElement passgiris = driver.findElement(By.xpath("//input[@id='lifp']"));
+        passgiris.sendKeys("Sdet123**");
+
+        WebElement giris = driver.findElement(By.xpath("//input[@id='lfb']"));
+        giris.click();
+        //BekleKapat();
     }
 
     @Test
     public void us_105() {
-        Basla();
+       // Basla();
         Aksiyon();
         WebElement hesabim = driver.findElement(By.xpath("//a[text()='Hesabım']"));
         hesabim.click();
@@ -106,12 +119,12 @@ public class AkakceTest extends BaseDriver {
         WebElement siparisVarmı = driver.findElement(By.xpath("//div[@class='no-record']"));
         Assert.assertTrue("Siparişiniz Bulunmaktadır",
                 siparisVarmı.getText().equals("Kayıtlı siparişiniz bulunmuyor."));
-        BekleKapat();
+        //BekleKapat();
     }
 
     @Test
     public void us_106() {
-        Basla();
+        //Basla();
         Aksiyon();
         WebElement hesabim = driver.findElement(By.xpath("//a[text()='Hesabım']"));
         hesabim.click();
@@ -120,11 +133,12 @@ public class AkakceTest extends BaseDriver {
         WebElement msjVarmi = driver.findElement(By.xpath("//p[text()='Listelenecek mesaj bulunamadı.']"));
         Assert.assertTrue("Mesajınız Bulunmaktadır",
                 msjVarmi.getText().equals("Listelenecek mesaj bulunamadı."));
-        BekleKapat();
+        //BekleKapat();
+       
     }
     @Test
     public void us_107(){
-        Basla();
+       //Basla();
         Aksiyon();
         WebElement hesabim = driver.findElement(By.xpath("//a[text()='Hesabım']"));
         hesabim.click();
