@@ -24,19 +24,19 @@ public class AkakceTest extends BaseDriver {
         soyad.sendKeys("Tears");
 
         WebElement mail = driver.findElement(By.xpath("//input[@id='rnufe1']"));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='rnufe1']")));
+
         mail.sendKeys("tolgahelmet@gmail.com");
 
         WebElement mail2 = driver.findElement(By.xpath("//input[@id='rnufe2']"));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='rnufe2']")));
+
         mail2.sendKeys("tolgahelmet@gmail.com");
 
         WebElement pass1 = driver.findElement(By.xpath("//input[@id='rnufp1']"));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='rnufp1']")));
+
         pass1.sendKeys("Sdet123**");
 
         WebElement pass2 = driver.findElement(By.xpath("//input[@id='rnufp2']"));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='rnufp2']")));
+
         pass2.sendKeys("Sdet123**");
 
         WebElement gender = driver.findElement(By.xpath("//input[@id='rngm']"));
