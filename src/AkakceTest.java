@@ -17,6 +17,7 @@ public class AkakceTest extends BaseDriver {
         WebElement hspac = driver.findElement(By.xpath("//a[text()='Hesap Aç']"));
         hspac.click();
         WebElement ad = driver.findElement(By.xpath("//input[@id='rnufn']"));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='rnufn']")));
         ad.sendKeys("Sdet");
 
         WebElement soyad = driver.findElement(By.xpath("//input[@id='rnufs']"));
@@ -24,6 +25,7 @@ public class AkakceTest extends BaseDriver {
         soyad.sendKeys("Tears");
 
         WebElement mail = driver.findElement(By.xpath("//input[@id='rnufe1']"));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='rnufe1']")));
 
         mail.sendKeys("tolgahelmet@gmail.com");
 

@@ -26,6 +26,8 @@ public class BaseDriver {
     public static void Aksiyon(){
 
         WebElement klnm = driver.findElement(By.xpath("//a[@id='H_a_v8']"));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@id='H_a_v8']")));
+
         klnm.click();
         //Actions aksiyonDriver2 = new Actions(driver);
         //Action aksiyon2 = aksiyonDriver2.moveToElement(klnm).build();
