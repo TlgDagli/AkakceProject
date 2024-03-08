@@ -51,6 +51,8 @@ public class BaseDriver {
 
 
 
+
+
     public static void BekleKapat() {
         Myfunc.Bekle(5);
         driver.quit();

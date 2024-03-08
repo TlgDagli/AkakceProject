@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b662fe91-83bd-4546-b75c-591fb2acc307" name="Changes" comment="Finish">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/seleniumhq_selenium_java.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/slf4j_nop.xml" afterDir="false" />
+    <list default="true" id="b662fe91-83bd-4546-b75c-591fb2acc307" name="Changes" comment="ali">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/seleniumhq_selenium_java2.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AkakceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AkakceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AkakceProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AkakceProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AliKemal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utility/BaseDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utility/BaseDriver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Tolga" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,18 +39,17 @@
     &quot;assignee&quot;: &quot;fatihpolat33&quot;
   }
 }</component>
-  <component name="GithubProjectSettings">
-    <option name="branchProtectionPatterns">
-      <list>
-        <option value="Akakce" />
-      </list>
-    </option>
-  </component>
   <component name="GithubPullRequestsUISettings">
+    <option name="recentNewPullRequestHead">
+      <RepoCoordinatesHolder>
+        <option name="owner" value="TlgDagli" />
+        <option name="repository" value="AkakceProject" />
+      </RepoCoordinatesHolder>
+    </option>
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="396117c1-845a-4dab-bec2-d0e8f8f513a1" />
-        <option name="url" value="https://github.com/TlgDagli/AkakceProject.git" />
+        <option name="accountId" value="53a9c864-ee73-4d3d-88b3-ee5ac9f2d9d0" />
+        <option name="url" value="https://github.com/TlgDagli/AkakceProject" />
       </UrlAndAccount>
     </option>
   </component>
@@ -61,80 +62,124 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "JUnit.AkakceTest.akakce.executor": "Run",
-    "JUnit.AkakceTest.us103.executor": "Run",
-    "JUnit.AkakceTest.us_101.executor": "Run",
-    "JUnit.AkakceTest.us_102.executor": "Run",
-    "JUnit.AkakceTest.us_104.executor": "Run",
-    "JUnit.AkakceTest.us_105.executor": "Run",
-    "JUnit.AkakceTest.us_106.executor": "Run",
-    "JUnit.AkakceTest.us_107.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.AkakceTest.akakce.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AkakceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AkakceTest.us103.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AkakceTest.us_101.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AkakceTest.us_102.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AkakceTest.us_104.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AkakceTest.us_105.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AkakceTest.us_106.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AkakceTest.us_107.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AliKemal.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AliKemal.test1.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AliKemal.test2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AliKemal.us_102.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AliKemal.us_105.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.AliKemal.us_106.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AliKemal.us_107.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.us_102.Us_102.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.us_102.test2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.us_103.Us_102.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.us_103.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.us_104.us_104.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.us_107.us_107.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;aliKemal&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Utility" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AkakceTest.us_107">
-    <configuration name="AkakceTest.us103" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AliKemal">
+    <configuration name="AliKemal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AkakceProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AkakceTest" />
-      <option name="METHOD_NAME" value="us103" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AliKemal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AliKemal" />
+      <option name="MAIN_CLASS_NAME" value="AliKemal.AliKemal" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AliKemal.us_102" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AkakceProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AliKemal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AliKemal" />
+      <option name="MAIN_CLASS_NAME" value="AliKemal.AliKemal" />
+      <option name="METHOD_NAME" value="us_102" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AkakceTest.us_104" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AliKemal.us_105" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AkakceProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AkakceTest" />
-      <option name="METHOD_NAME" value="us_104" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AkakceTest.us_105" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AkakceProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AkakceTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AliKemal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AliKemal" />
+      <option name="MAIN_CLASS_NAME" value="AliKemal.AliKemal" />
       <option name="METHOD_NAME" value="us_105" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AkakceTest.us_106" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AliKemal.us_106" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AkakceProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AkakceTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AliKemal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AliKemal" />
+      <option name="MAIN_CLASS_NAME" value="AliKemal.AliKemal" />
       <option name="METHOD_NAME" value="us_106" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AkakceTest.us_107" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AliKemal.us_107" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AkakceProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AkakceTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AliKemal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AliKemal" />
+      <option name="MAIN_CLASS_NAME" value="AliKemal.AliKemal" />
       <option name="METHOD_NAME" value="us_107" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -143,18 +188,18 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AkakceTest.us_107" />
-        <item itemvalue="JUnit.AkakceTest.us_106" />
-        <item itemvalue="JUnit.AkakceTest.us_105" />
-        <item itemvalue="JUnit.AkakceTest.us_104" />
-        <item itemvalue="JUnit.AkakceTest.us103" />
+        <item itemvalue="JUnit.AliKemal" />
+        <item itemvalue="JUnit.AliKemal.us_106" />
+        <item itemvalue="JUnit.AliKemal.us_105" />
+        <item itemvalue="JUnit.AliKemal.us_102" />
+        <item itemvalue="JUnit.AliKemal.us_107" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-11.0.22-corretto-11.0.22-4caba194b151-868cef46" />
+        <option value="jdk-11.0.21-corretto-11.0.21-4caba194b151-b24ef850" />
       </set>
     </attachedChunks>
   </component>
@@ -295,7 +340,39 @@
       <option name="project" value="LOCAL" />
       <updated>1709351876384</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Finish">
+      <option name="closed" value="true" />
+      <created>1709589381273</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1709589381273</updated>
+    </task>
+    <task id="LOCAL-00018" summary="ali">
+      <option name="closed" value="true" />
+      <created>1709589495987</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1709589495987</updated>
+    </task>
+    <task id="LOCAL-00019" summary="ali">
+      <option name="closed" value="true" />
+      <created>1709808300881</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1709808300881</updated>
+    </task>
+    <task id="LOCAL-00020" summary="ali">
+      <option name="closed" value="true" />
+      <created>1709893636414</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1709893636414</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -322,7 +399,8 @@
     <MESSAGE value="son hali7" />
     <MESSAGE value="son hali9" />
     <MESSAGE value="Finish" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish" />
+    <MESSAGE value="ali" />
+    <option name="LAST_COMMIT_MESSAGE" value="ali" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AkakceProject$AkakceTest_us_101.ic" NAME="AkakceTest.us_101 Coverage Results" MODIFIED="1709332111537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
