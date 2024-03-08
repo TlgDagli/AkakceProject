@@ -103,9 +103,17 @@ public class AliKemal extends BaseDriver{
 
         //================================================================================================//
 
-        // US_102 //////////////////////////////////////////////////////////////////////////////////////////
 
 
+    }
+
+    // US_102 //////////////////////////////////////////////////////////////////////////////////////////
+        @Test
+    public void us_102() {
+//            driver.get("https://www.akakce.com/");
+//            Myfunc.Bekle(2);
+            WebElement profileLink2 = driver.findElement(By.xpath("//a[@href='/akakcem/giris/']"));
+            profileLink2.click();
             // Hesaba mail yazıldı
             WebElement mail1 = driver.findElement(By.xpath("//input[@id='life']"));
             mail1.sendKeys("dranoispira@gmail.com");
@@ -135,9 +143,11 @@ public class AliKemal extends BaseDriver{
             } else {
                 System.out.println("Giriş başarısız veya kullanıcı adı hatalı: " + userName);
             }
-
+        }
 
         //================================================================================================//
+    @Test
+    public void us_103() {
 
         // US_103 //////////////////////////////////////////////////////////////////////////////////////////
 
@@ -150,10 +160,14 @@ public class AliKemal extends BaseDriver{
         out.click();    //Çıkış yapılıyor
 
         // Giriş sayfasına geri dön
-        WebElement profileLink2= driver.findElement(By.xpath("//a[@href='/akakcem/giris/']"));
+        WebElement profileLink2 = driver.findElement(By.xpath("//a[@href='/akakcem/giris/']"));
         profileLink2.click();
 
         //================================================================================================//
+    }
+
+    @Test
+    public void us_104() {
 
         // US_104 //////////////////////////////////////////////////////////////////////////////////////////
 
@@ -182,16 +196,28 @@ public class AliKemal extends BaseDriver{
         ac1.click();
 
         // Çıkış yap
-        WebElement out1 = driver.findElement(By.xpath("//a[@href='#Çık']"));
-        out1.click();    //Çıkış yapılıyor
+//        WebElement out1 = driver.findElement(By.xpath("//a[@href='#Çık']"));
+//        out1.click();    //Çıkış yapılıyor
+
+        WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(30));
+        WebElement out2 = wait1.until(ExpectedConditions.elementToBeClickable(By.cssSelector("a[href='#Çık']")));
+        out2.click();
+    }
+
 
         //================================================================================================//
+    @Test
+    public void us_105() {
 
         // US_105 //////////////////////////////////////////////////////////////////////////////////////////
 
+
         // Giriş sayfasına geri dön
-        WebElement profileLink3= driver.findElement(By.xpath("//a[@href='/akakcem/giris/']"));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+        WebElement profileLink3 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='https://www.akakce.com/akakcem/giris/']")));
         profileLink3.click();
+//        WebElement profileLink3 = driver.findElement(By.xpath("//a[@href='/akakcem/giris/']"));
+//        profileLink3.click();
 
         // Hesaba mail yazıldı
         WebElement mail3 = driver.findElement(By.xpath("//input[@id='life']"));
@@ -239,18 +265,23 @@ public class AliKemal extends BaseDriver{
         Myfunc.Bekle(2);
 
         // Çıkış yapıldı
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        WebElement out2 = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("a[href='#Çık']")));
+        WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(50));
+        WebElement out2 = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='#Çık']")));
         out2.click();
+    }
 
         //================================================================================================//
+    @Test
+    public void us_106() {
 
         // US_106 //////////////////////////////////////////////////////////////////////////////////////////
 
+        //Myfunc.Bekle(5);
         // Giriş sayfasına geri dön
-        Myfunc.Bekle(2);
-        WebElement profileLink4= driver.findElement(By.xpath("//a[@href='https://www.akakce.com/akakcem/giris/']"));
+
+        WebElement profileLink4 = driver.findElement(By.xpath("//a[@href='https://www.akakce.com/akakcem/giris/']"));
         profileLink4.click();
+        //a[@href='/akakcem/giris/']
 
         // Hesaba mail yazıldı
         WebElement mail4 = driver.findElement(By.xpath("//input[@id='life']"));
@@ -268,11 +299,11 @@ public class AliKemal extends BaseDriver{
         Myfunc.Bekle(1);
 
         // Giriş yap butonuna tıklandı
-        WebElement profileLink5= driver.findElement(By.xpath("//input[@id='lfb']"));
+        WebElement profileLink5 = driver.findElement(By.xpath("//input[@id='lfb']"));
         profileLink5.click();
 
         // Giriş sayfasına yönlenildi
-        WebElement profileLink6= driver.findElement(By.xpath("//a[@href='/akakcem/giris/']"));
+        WebElement profileLink6 = driver.findElement(By.xpath("//a[@href='/akakcem/giris/']"));
         profileLink6.click();
 
         // Sağ üst köşedeki kullanıcıya tıklandı
@@ -303,16 +334,20 @@ public class AliKemal extends BaseDriver{
         Myfunc.Bekle(2);
 
         // Çıkış yapıldı
-        WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(30));
         WebElement out3 = wait1.until(ExpectedConditions.elementToBeClickable(By.cssSelector("a[href='#Çık']")));
         out3.click();
+    }
 
         //================================================================================================//
+    @Test
+    public void us_107() {
 
         // US_107 //////////////////////////////////////////////////////////////////////////////////////////
 
+        Myfunc.Bekle(5);
         // Giriş sayfasına git
-        WebElement profileLink7= driver.findElement(By.xpath("//a[@href='/akakcem/giris/']"));
+        WebElement profileLink7 = driver.findElement(By.xpath("//a[@href='/akakcem/giris/']"));
         profileLink7.click();
 
         // Hesaba mail yazıldı
@@ -331,7 +366,7 @@ public class AliKemal extends BaseDriver{
         Myfunc.Bekle(1);
 
         // Giriş yap butonuna tıklandı
-        WebElement profileLink8= driver.findElement(By.xpath("//input[@id='lfb']"));
+        WebElement profileLink8 = driver.findElement(By.xpath("//input[@id='lfb']"));
         profileLink8.click();
         Myfunc.Bekle(1);
 
@@ -345,7 +380,7 @@ public class AliKemal extends BaseDriver{
         Myfunc.Bekle(4);
 
         // Hesap iptal tıkla
-        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(30));
         WebElement myAccountDelete1 = driver.findElement(By.xpath("//a[@href='/akakcem/kullanici-bilgilerim/uyelik-iptali/']"));
         wait2.until(ExpectedConditions.elementToBeClickable(myAccountDelete1));
         myAccountDelete1.click();
@@ -360,6 +395,7 @@ public class AliKemal extends BaseDriver{
         deleteAccount.click();
 
 
+        BekleKapat();
     }
 }
 
